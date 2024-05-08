@@ -54,6 +54,8 @@ server.use("/users",isAuth(), userRouters.router);
 server.use("/auth", authRouters.router);
 server.use("/cart", isAuth(),cartRouters.router);
 server.use("/orders",isAuth(), ordersRouters.router);
+
+server.get('*',(req,res)=> res.sendFile(path.resolve('build','index.html')));
 // Email endpoint
 
 // passport Strategies
