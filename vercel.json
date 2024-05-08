@@ -12,13 +12,13 @@
     
     "rewrites":[
     {
-    "src": "/(.*)",
-    "dest": "index.js"
+    "source": "/(.*)",
+    "destination": "index.js"
     },
     {
-        "src": "/(.+)",
-        "dest": "build/$1"
-        }
+        "source": "/(.+)",
+        "destination": "build/$1"
+    }
 ]
 
 }
