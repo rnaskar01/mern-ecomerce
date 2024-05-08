@@ -10,7 +10,17 @@
       }
     ],
     
-    "rewrites":[{"source": "/(.*)","destination": "index.js"}]
+    "rewrites":[
+    {
+    "source": "/(.*)",
+    "destination": "index.js"
+    },
+    {
+        "source": "/(.+)",
+        "destination": "build/$1"
+        }
+]
+
 }
 
 
